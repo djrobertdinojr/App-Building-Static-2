@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Resource Hub</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#categories-section">Categories</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home">
+    <h1>Welcome to the Educational Resource Hub</h1>
+    <p>Your go-to platform for curated educational content.</p>
+  </section>
+
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <p>This platform provides a variety of resources across numerous fields to support your learning journey.</p>
+  </section>
+
+  <section id="featured">
+    <h2>Featured Resources</h2>
+    <p>Explore our top-rated educational resources.</p>
+    <a href="https://www.example.com" target="_blank">Resource Link</a>
+  </section>
+
+  <section id="categories-section">
+    <h2>Categories</h2>
+    <div id="categories">
+      <ul>
+        <li><a href="https://www.khanacademy.org/science #resources">Science</a></li>
+        <li><a href="https://www.freecodecamp.org/ #resources">Technology</a></li>
+        <li><a href="https://www.desmos.com/ #resources">Mathematics</a></li>
+        <li><a href="https://lithub.com/ #resources">Literature</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="resources">
+    <h3>Sample Resources</h3>
+    <p>Browse through a sample of the many resources available:</p>
+    <ul>
+      <li><a href="https://826digital.com/" target="_blank">826digital</a></li>
+      <li><a href="https://edsitement.neh.gov/" target="_blank">Edsitement</a></li>
+      <li><a href="https://www.funbrain.com/" target="_blank">Funbrain</a></li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div id="mission">
+      <p>Our mission is to make quality education accessible to everyone.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p>Email: info@educationhub.com</p>
+    <p>Phone: +123 456 7890</p>
+  </section>
+
+  <!-- JavaScript for Smooth Scrolling -->
+  <script>
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
